@@ -11,6 +11,7 @@ import {
   UserCircle,
   LogOut,
   Shield,
+  AlertTriangle,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
