@@ -44,7 +44,7 @@ const PaymentsManagement = () => {
         .order("payment_date", { ascending: false });
 
       if (statusFilter !== "all") {
-        query = query.eq("status", statusFilter);
+        query = query.eq("status", statusFilter as any);
       }
       if (dateFrom) {
         query = query.gte("payment_date", dateFrom);

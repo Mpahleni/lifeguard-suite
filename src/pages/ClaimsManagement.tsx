@@ -38,7 +38,7 @@ const ClaimsManagement = () => {
         .order("created_at", { ascending: false });
 
       if (statusFilter !== "all") {
-        query = query.eq("status", statusFilter);
+        query = query.eq("status", statusFilter as any);
       }
 
       const { data, error } = await query;
