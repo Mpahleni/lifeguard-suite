@@ -33,7 +33,8 @@ const DashboardLayout = ({ children, user }: DashboardLayoutProps) => {
     { icon: FileText, label: "Policies", path: "/dashboard/policies" },
     { icon: Users, label: "Clients", path: "/dashboard/clients" },
     { icon: UserCircle, label: "Agents", path: "/dashboard/agents" },
-    { icon: CreditCard, label: "Claims", path: "/dashboard/claims" },
+    { icon: CreditCard, label: "Payments", path: "/dashboard/payments" },
+    { icon: Shield, label: "Claims", path: "/dashboard/claims" },
   ];
 
   return (
