@@ -13,6 +13,7 @@ import {
   Shield,
   AlertTriangle,
   Bell,
+  BarChart3,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -38,6 +39,7 @@ const DashboardLayout = ({ children, user }: DashboardLayoutProps) => {
     { icon: CreditCard, label: "Payments", path: "/dashboard/payments" },
     { icon: Shield, label: "Claims", path: "/dashboard/claims" },
     { icon: Bell, label: "Notifications", path: "/dashboard/notifications" },
+    { icon: BarChart3, label: "Reports", path: "/dashboard/reports" },
   ];
 
   return (
