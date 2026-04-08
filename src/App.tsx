@@ -11,6 +11,7 @@ import ClientsManagement from "./pages/ClientsManagement";
 import AgentsManagement from "./pages/AgentsManagement";
 import PaymentsManagement from "./pages/PaymentsManagement";
 import ClaimsManagement from "./pages/ClaimsManagement";
+import NotificationsManagement from "./pages/NotificationsManagement";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/dashboard/agents" element={<AgentsManagement />} />
           <Route path="/dashboard/payments" element={<PaymentsManagement />} />
           <Route path="/dashboard/claims" element={<ClaimsManagement />} />
+          <Route path="/dashboard/notifications" element={<NotificationsManagement />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

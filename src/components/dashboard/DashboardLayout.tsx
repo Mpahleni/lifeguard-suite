@@ -12,6 +12,7 @@ import {
   LogOut,
   Shield,
   AlertTriangle,
+  Bell,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -36,6 +37,7 @@ const DashboardLayout = ({ children, user }: DashboardLayoutProps) => {
     { icon: UserCircle, label: "Agents", path: "/dashboard/agents" },
     { icon: CreditCard, label: "Payments", path: "/dashboard/payments" },
     { icon: Shield, label: "Claims", path: "/dashboard/claims" },
+    { icon: Bell, label: "Notifications", path: "/dashboard/notifications" },
   ];
 
   return (
